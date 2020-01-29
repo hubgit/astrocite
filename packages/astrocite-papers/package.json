@@ -1,0 +1,24 @@
+{
+  "name": "astrocite-papers",
+  "version": "0.15.0",
+  "description": "Converts Papers citations XML to CSL JSON",
+  "author": "Alf Eaton <eaton.alf@gmail.com>",
+  "repository": "dsifford/astrocite",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**"
+  ],
+  "scripts": {
+    "build": "rm -rf lib/* && tsc -p ."
+  },
+  "dependencies": {
+    "astrocite-core": "file:../core",
+    "csl-json": "^0.1.0",
+    "fontoxpath": "^3.9.2",
+    "slimdom-sax-parser": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/xmldom": "^0.1.29"
+  }
+}
