@@ -123,6 +123,10 @@ export const KNOWN_COMMANDS: ReadonlyMap<string, string> = new Map([
     ['l', '\u0142'],
     ['L', '\u0141'],
     ['ss', '\u00DF'],
+    
+    // newlines
+    ['newline', '\n'],
+    ['\\', '\n'],
 ]);
 
 // prettier-ignore
