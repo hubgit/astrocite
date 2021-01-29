@@ -504,6 +504,33 @@ Array [
 ]
 `;
 
+exports[`BibTeX Parser should parse files with fields containing newlines 1`] = `
+Array [
+  Object {
+    "author": Array [
+      Object {
+        "family": "Doe",
+        "given": "John",
+      },
+    ],
+    "id": "Test",
+    "issued": Object {
+      "date-parts": Array [
+        Array [
+          "2020",
+          "",
+          "",
+        ],
+      ],
+    },
+    "title": "Test
+item with
+newlines",
+    "type": "article",
+  },
+]
+`;
+
 exports[`BibTeX Parser should parse files with verbatim tildes, comments, odd characters in keys, super/subscript, no-dot i/j, and math-mode switches 1`] = `
 Array [
   Object {
