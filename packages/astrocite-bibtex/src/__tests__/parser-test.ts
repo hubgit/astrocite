@@ -87,4 +87,7 @@ describe('BibTeX Parser', () => {
     it('should parse entries with bibtex special characters', () => {
         expect(parse(cases.special_symbols)).toMatchSnapshot();
     });
+    it('should parse files with fields containing newlines', () => {
+        expect(parse(cases.newlines)).toMatchSnapshot();
+    });
 });
